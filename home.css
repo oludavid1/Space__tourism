@@ -1,0 +1,135 @@
+/**************Home*****/
+.background_home {
+  background-image: url("./assets/home/background-home-desktop.jpg");
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 103rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rem;
+}
+
+.explore {
+  width: 27.2rem;
+  height: 27.2rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_text {
+  width: 45rem;
+  /* height: 38.2rem; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.body_header {
+  font-size: 2.8rem;
+  margin-bottom: 2.4rem;
+  color: #d0d6f9;
+  letter-spacing: 4.725px;
+}
+
+.space {
+  font-size: 15rem;
+  margin-bottom: 2.4rem;
+  font-family: Bellefair;
+}
+
+.explore_text {
+  color: #0b0d17;
+  font-size: 3.2rem;
+  font-family: Bellefair;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 12rem 6.1rem;
+  border-radius: 50%;
+}
+
+.body_normal {
+  font-size: 1.8rem;
+  color: #d0d6f9;
+  line-height: 3.2rem;
+}
+
+@media (max-width: 1024px) {
+  .background_home {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15.6rem;
+    margin-top: 10.6rem;
+    margin-bottom: 14.2rem;
+  }
+
+  .body_header {
+    font-size: 2rem;
+    letter-spacing: 3.375px;
+  }
+
+  .space {
+    line-height: 15rem;
+  }
+
+  .body_normal {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .explore {
+    width: 24.2rem;
+    height: 24.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .background_home {
+    background-image: url("./assets/home/background-home-mobile.jpg");
+  }
+
+  main {
+    gap: unset;
+  }
+
+  .body_header {
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+    padding-bottom: 1.6rem;
+  }
+
+  .space {
+    font-size: 8rem;
+    line-height: 10rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .body_normal {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 8.1rem;
+    max-width: 32.7rem;
+    align-self: center;
+  }
+
+  .explore {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .explore_text {
+    font-size: 2rem;
+    letter-spacing: 0.125rem;
+  }
+}

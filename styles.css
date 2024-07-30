@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  object-fit: contain;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  line-height: 1;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  /* min-height: 100vh; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding-top: 8rem;
+}
+
+.navigations {
+  list-style: none;
+  display: flex;
+  width: 89rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  padding-left: 12.3rem;
+  padding-right: 16.5rem;
+  position: absolute;
+  letter-spacing: 2.7px;
+  top: 4rem;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  /* z-index: -10; */
+}
+
+ul li a {
+  color: #fff;
+}
+
+.navigations li a:not(.current_tab):hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 3.5rem;
+}
+
+.current_tab {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.space,
+.body_header,
+.destination_location,
+.destination_nav,
+.destination_head,
+.destination_eta,
+.crew_title,
+.crew_rank,
+.crew_name,
+.technology_title,
+.technology_header,
+.technology_channel {
+  text-transform: uppercase;
+}
+
+hr {
+  border: 1px solid #979797;
+  opacity: 0.25;
+  position: absolute;
+  left: 16.7rem;
+  right: 90rem;
+  z-index: 1;
+  /* width: 47.3rem; */
+}
+
+.destination_location,
+.crew_title,
+.technology_title {
+  font-size: 2.8rem;
+  margin-bottom: 9.7rem;
+  letter-spacing: 3px;
+}
+
+.number {
+  font-weight: bold;
+  opacity: 0.25;
+  letter-spacing: 4.725px;
+  padding-right: 2.4rem;
+}
+
+.hamburger_menu {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 3.7rem;
+  cursor: pointer;
+}
+
+.menu_overlay {
+  position: fixed;
+  top: 0;
+  right: -60%;
+  width: 60%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+  transition: right 0.3s ease;
+}
+
+.menu_overlay ul {
+  padding: 20px;
+  list-style: none;
+}
+
+.menu_overlay li {
+  margin-bottom: 10px;
+}
+
+.cancel_icon {
+  display: none;
+  position: absolute;
+  top: 3.7rem;
+  right: 5%;
+  cursor: pointer;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  height: 9.6rem;
+  position: absolute;
+  letter-spacing: 2.7px;
+  top: 11.8rem;
+  left: 3.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  hr {
+    display: none;
+  }
+
+  .navigations {
+    width: 45rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+    letter-spacing: 2.4px;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+  }
+
+  .bold {
+    display: none;
+  }
+
+  .nav_icon {
+    position: absolute;
+    left: 4.9rem;
+    top: 2.4rem;
+  }
+
+  .destination_location,
+  .crew_title,
+  .technology_title {
+    font-size: 2rem;
+    letter-spacing: 3.375px;
+  }
+
+  .number {
+    font-weight: bold;
+    opacity: 0.25;
+    letter-spacing: 4.725px;
+    padding-right: 1.9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav_options {
+    display: none;
+  }
+
+  .destination_location,
+  .crew_title,
+  .technology_title {
+    font-size: 1.6rem;
+    letter-spacing: 2.7px;
+  }
+
+  .nav_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 2.7rem;
+    left: 5%;
+  }
+
+  .bold {
+    display: unset;
+  }
+
+  .number {
+    letter-spacing: 2.7px;
+    padding-right: 1.6rem;
+  }
+
+  .hamburger_menu {
+    display: block;
+  }
+
+  .menu_overlay {
+    right: -60%;
+  }
+
+  .cancel_icon {
+    display: block;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&family=Belanosima:wght@400;600;700&family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./crew.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <meta name="description" content="Frontend Mentor Space Challenge" />
+    <title>Space tourism website</title>
+  </head>
+  <body class="background_crew">
+    <section class="container">
+      <nav>
+        <div class="nav_icon">
+         <a href="../index.html">
+          <img
+          src="../assets/shared/logo.svg"
+          alt="Logo"
+          width="48"
+          height="48"
+        />
+         </a>
+        </div>
+        <hr />
+        <div class="nav_options">
+          <ul class="navigations">
+            <li>
+              <a href="../index.html"> <span class="bold">00</span> Home </a>
+            </li>
+            <li>
+              <a href="../destination/destination.html">
+                <span class="bold">01</span> Destination
+              </a>
+            </li>
+            <li>
+              <a class="current_tab" href="#">
+                <span class="bold">02</span> Crew
+              </a>
+            </li>
+            <li>
+              <a href="../technology/technology.html">
+                <span class="bold">03</span> Technology
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hamburger_menu" id="hamburgerMenu">
+        <img src="../assets/shared/icon-hamburger.svg" alt="Menu" />
+      </div>
+      <div class="menu_overlay" id="menuOverlay">
+        <ul class="navigation mobile">
+          <li>
+            <a href="../index.html"> <span class="bold">00</span> Home </a>
+          </li>
+          <li>
+            <a href="../destination/destination.html">
+              <span class="bold">01</span> Destination
+            </a>
+          </li>
+          <li>
+            <a href="#"> <span class="bold">02</span> Crew </a>
+          </li>
+          <li>
+            <a href="../technology/technology.html">
+              <span class="bold">03</span> Technology
+            </a>
+          </li>
+        </ul>
+        <div class="cancel_icon" id="cancelIcon">
+          <img src="../assets/shared/icon-close.svg" alt="Cancel Icon" />
+        </div>
+      </div>
+      <div class="crew commander">
+        <div class="crew_text">
+          <div class="crew_title">
+            <p><span class="number">02</span> Meet your crew</p>
+          </div>
+          <div class="crew_rank">
+            <p id="crewRole"></p>
+          </div>
+          <div class="crew_name">
+            <p id="crewName"></p>
+          </div>
+          <div class="crew_txt">
+            <p id="crewBio"></p>
+          </div>
+          <div class="crew_nav">
+            <ul class="crew_navigations">
+              <li>
+                <a href="#"><span></span></a>
+              </li>
+              <li>
+                <a href="#"><span></span></a>
+              </li>
+              <li>
+                <a href="#"><span></span></a>
+              </li>
+              <li>
+                <a href="#"><span></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="crew_image">
+          <img id="crewImage" src="" alt="" height="700" />
+        </div>
+      </div>
+    </section>
+    <script type="module" src="../script.js"></script>
+    <script type="module" src="./crew.js"></script>
+  </body>
+</html>

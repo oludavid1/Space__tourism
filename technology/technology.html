@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&family=Belanosima:wght@400;600;700&family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./technology.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <meta name="description" content="Frontend Mentor Space Challenge" />
+    <title>Space tourism website</title>
+  </head>
+  <body class="background_technology">
+    <section class="container">
+      <nav>
+        <div class="nav_icon">
+          <img
+            src="../assets/shared/logo.svg"
+            alt="Logo"
+            width="48"
+            height="48"
+          />
+        </div>
+        <hr />
+        <div class="nav_options">
+          <ul class="navigations">
+            <li>
+              <a href="../index.html"> <span class="bold">00</span> Home </a>
+            </li>
+            <li>
+              <a href="../destination/destination.html">
+                <span class="bold">01</span> Destination
+              </a>
+            </li>
+            <li>
+              <a href="../crew/crew.html">
+                <span class="bold">02</span> Crew
+              </a>
+            </li>
+            <li>
+              <a class="current_tab" href="#">
+                <span class="bold">03</span> Technology
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hamburger_menu" id="hamburgerMenu">
+        <img src="../assets/shared/icon-hamburger.svg" alt="Menu" />
+      </div>
+      <div class="menu_overlay" id="menuOverlay">
+        <ul class="navigation mobile">
+          <li>
+            <a href="../index.html"> <span class="bold">00</span> Home </a>
+          </li>
+          <li>
+            <a href="../destination/destination.html">
+              <span class="bold">01</span> Destination
+            </a>
+          </li>
+          <li>
+            <a href="../crew/crew.html"> <span class="bold">02</span> Crew </a>
+          </li>
+          <li>
+            <a href="#"> <span class="bold">03</span> Technology </a>
+          </li>
+        </ul>
+        <div class="cancel_icon" id="cancelIcon">
+          <img src="../assets/shared/icon-close.svg" alt="Cancel Icon" />
+        </div>
+      </div>
+      <div class="tech">
+        <div class="technology">
+          <div class="technology_body">
+            <div class="technology_title">
+              <p><span class="number">03</span> Space launch 101</p>
+            </div>
+            <div class="technology_text">
+              <div class="technology_nav">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+              </div>
+              <div class="technology_txt">
+                <div class="technology_header">
+                  <p>The terminology...</p>
+                </div>
+                <div class="technology_channel">
+                  <p id="technologyName"></p>
+                </div>
+                <div class="technology_normal">
+                  <p id="technologyDescription"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="technology_image">
+            <img id="technologyImage" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="../script.js"></script>
+    <script type="module" src="./technology.js"></script>
+  </body>
+</html>
